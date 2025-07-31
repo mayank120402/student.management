@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style5.css">
+</head>
+<body>
+    <!--<h2>my name is mangilal baghel </h2>
+
+    <div id="qrcode">
+
+    <img src="https://api.qrserver.com/v1/create-qr-code/?data=https://yourwebsite.com/feedback-form&size=200x200" alt="Feedback QR Code">
+    </div>
+
+
+    <div>
+  <p>Feedback देने के लिए नीचे QR स्कैन करें:</p>
+  <img src="https://api.qrserver.com/v1/create-qr-code/?data=https://docs.google.com/forms/d/e/…/viewform&size=200x200" alt="Feedback QR Code">
+</div>-->
+
+<div id="qrcode">
+  <img src="https://api.qrserver.com/v1/create-qr-code/?data=https://wa.me/91YourNumber&size=200x200" alt="WhatsApp QR">
+  <p>इस QR को स्कैन करें और सीधे WhatsApp chat खोलें</p>
+</div>
+
+    
+<!--<form id="feedbackForm">
+  <input fields 
+  <button type="button" onclick="sendFeedback()">Submit</button>
+</form>-->
+
+<h2>Feedback फॉर्म</h2>
+  <form id="feedbackForm">
+    <label for="name">नाम:</label>
+    <input type="text" id="name" name="name" required>
+
+    <label for="email">ईमेल:</label>
+    <input type="email" id="email" name="email" required>
+
+    <label for="message">संदेश / फीडबैक:</label>
+    <textarea id="message" name="message" rows="4" required></textarea>
+
+    <button type="button" onclick="sendFeedbackToWhatsApp()">सब्मिट</button>
+  </form>
+
+<p>आप चाहे तो <a href="https://wa.me/91YourNumber" target="_blank">यह लिंक</a> पर क्लिक करके सीधे WhatsApp से संपर्क कर सकते हैं।</p>
+
+</body>
+<script src="script5.js"></script>
+<!--<script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"></script>
+<script src="https://wa.me/919302217201"></script>
+<script src="https://media.qrtiger.com/js/qrtiger_widget.js" async></script>
+<div class="qrtiger"></div>-->
+
+
+</html>
