@@ -254,7 +254,7 @@ nav ul li a.active {
 .slides {
   display: flex;
   width: calc(300px * 3);
-  animation: slideAnim 13s infinite;
+  animation: slideAnim 14s infinite;
   gap: 5px;
    
 }
