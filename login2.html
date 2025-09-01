@@ -16,17 +16,7 @@
   });
   // login, logout, isAuthenticated, getUser etc. use कर सकते हैं
 
-      await auth0.loginWithRedirect();
-      const result = await auth0.handleRedirectCallback();
-      const user = await auth0.getUser();
-
-      auth0.logout({ returnTo: window.location.origin });
-     (async () => {
-    const auth0 = await createAuth0Client({
-      domain: "YOUR_AUTH0_DOMAIN",
-      client_id: "YOUR_CLIENT_ID",
-      redirect_uri: window.location.origin
-    });
+      
 
     // अब आप auth0 के साथ काम कर सकते हैं
     const isAuthenticated = await auth0.isAuthenticated();
